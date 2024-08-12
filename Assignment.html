@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>out assignment with divineAss</title>
+ </head>
+ <script>
+  
+ </script>
+ <style>
+ body {
+   font-family: Tahoma, Times New Roman, Arial;
+  margin: auto;
+  padding: 0;
+ }
+ .header {
+   background-color: blue;
+   height: 50px;
+ }
+
+ .logo {
+   background-color: none;
+   float: left;
+ }
+ .btn {
+   float: right;
+   border: none;
+   background-color: transparent;
+   color: white;
+   font-size: 25px;
+ }
+   #aside {
+     display: none;
+   }
+   #aside > ul > li{
+     list-style-type: none;
+     padding: 20px;
+     border-bottom: 1px solid black;
+   }
+   #aside > li a {
+     padding: 20px;
+   }
+   li a {
+     color: black;
+     text-decoration: none;
+     padding: 16px;
+   }
+  .main {
+    font-size: 20px;
+    margin: 10px;
+  }
+  a:active, a:link {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    background-color: ;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    clear: both;
+    width: 100%;
+    bottom: 0;
+  }
+ </style>
+ <body>
+   <div class="header">
+     <div class="logo">
+       <h3><span style="background-color: white; color: blue;">Di</span><span style="background-color: blue; color: white;"> Vine</span></h3>
+     </div>
+     <div class="nav">
+       <button class="btn" type="button" onclick="document.getElementById('aside').style.display = 'block'">☰</button>
+     </div>
+   </div>
+   <div id="aside">
+     <ul>
+       <button class="btn" type="button" onclick="document.getElementById('aside').style.display = 'none'">❌</button>
+       <li><a href="index.html"><i class="fa fa-home icon"></i>Home</a></li>
+       <li><a href="Assignment.html"><i class="fa fa-book icon"></i>Answer's</a></li>
+       <li><a href="contact.html"><i class="fa fa-phone icon"></i>Contact</a></li>
+     </ul>
+   </div>
+   <div class="main">
+     <dl>
+       <dt>Assignments:</dt>
+        <dd><a href="economics.html">Economics</a></dd><p />
+        <dd><a href="civic.html">Civic</a></dd><p />
+        <dd><a href="physics.html">Physics</a></dd><p />
+        <dd><a href="english.html">English language</a></dd><p />
+       <dd><a href="maths.html">Mathematics</a></dd><p />
+       <dd><a href="Agric.html">Agricultural Science</a></dd><p />
+     </dl>
+   </div>
+   <footer>
+     &trade;2024 All-Right Reserved Divine
+   </footer>
+ </body>
+</html>
