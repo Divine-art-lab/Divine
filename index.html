@@ -23,12 +23,11 @@
     background-image: -moz-linear-gradient(left, skyblue, blue);
     background-image: -o-linear-gradient(left, skyblue, blue);
     background-image: linear-gradient(to right, skyblue, blue);
-    display: float;
+    display: flex;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     width: 100%;
-    border-bottom-left-radius: 30px;
-    text-align: left;
    }
 .hamburger {
   float: right;
@@ -37,9 +36,15 @@
   background-color: transparent;
   font-size: 30px;
 }
+button .fa-times {
+  display: none;
+}
+.hamburger:hover .fa-times{
+  display: inline-block;
+}
 #menu {
   display: none;
-  height: 100%;@>hsla(235, 56%, 26%, 1)
+  height: 100%;
   background-color: white;
   color: black;
 }
@@ -133,9 +138,9 @@ h4 {
   <body id="home">
     <header>
     <h3><span style="color: white; background-color: blue;">Di</span><span style="color: blue; background-color: white;">Vine</span>
-    <button class="hamburger" onclick="toggleMenu()">☰<i class="fa fa-times icon"></i></button>
-     
     </h3>
+    <button class="hamburger" onclick="toggleMenu()">☰<i class="fa fa-times icon"></i></button>
+    
     <div class="menu" id="menu">
       <ul>
         <li><a href="#home"><i class="fa fa-home icon"></i>Home</a></li><p />
